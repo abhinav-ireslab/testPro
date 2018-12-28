@@ -9,8 +9,13 @@
 FROM java:8  
 COPY /target/ireslab-spring-cloud-eureka-server-0.0.1-SNAPSHOT.jar /target/ireslab-spring-cloud-eureka-server-0.0.1-SNAPSHOT.jar
 WORKDIR server/target
-EXPOSE 8761
-CMD ["java","-jar","/target/ireslab-spring-cloud-eureka-server-0.0.1-SNAPSHOT.jar", "-e", "production"]
+CMD ["eureka"]
+#EXPOSE 8761
+EXPOSE 80
+EXPOSE 443
+
+#CMD ["java","-jar","/target/ireslab-spring-cloud-eureka-server-0.0.1-SNAPSHOT.jar", "-e", "production"]
+
 
 
 
