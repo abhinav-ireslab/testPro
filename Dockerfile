@@ -55,7 +55,7 @@ ENV PATH $PATH:$CATALINA_HOME/bin
 
 
 #RUN echo qwerty-123 | sudo -S su - ireslab04 -c "cp /var/sendx.war $CATALINA_HOME/webapps/sendx.war"
-COPY /target/ireslab-spring-cloud-eureka-server-0.0.1-SNAPSHOT.war $CATALINA_HOME/webapps/ireslab-spring-cloud-eureka-server-0.0.1-SNAPSHOT.war
+COPY /target/ireslab-spring-cloud-eureka-server-0.0.1-SNAPSHOT.jar $CATALINA_HOME/webapps/ireslab-spring-cloud-eureka-server-0.0.1-SNAPSHOT.jar
 
 
 #Expose port 8585 8009
